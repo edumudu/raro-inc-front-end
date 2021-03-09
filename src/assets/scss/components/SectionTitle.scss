@@ -1,0 +1,21 @@
+.section-title {
+  position: relative;
+  display: inline-block;
+  padding: 15px 120px;
+  font-size: 4rem;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  background-color: var(--secondary);
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    display: block;
+    width: 50vw;
+    height: 100%;
+    content: "";
+    background-color: inherit;
+  }
+}

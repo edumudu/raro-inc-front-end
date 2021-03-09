@@ -20,6 +20,12 @@ body {
 // Clases
 .container {
   width: 100%;
-  max-width: 1280px;
   margin: 0 auto;
+
+  @include mobile() { max-width: auto; }
+  @include tabletSm() { max-width: 540px; }
+  @include tablet() { max-width: 720px; }
+  @include desktop() { max-width: 960px; }
+  @include desktopLg() { max-width: 1140px; }
+  @include desktopXlg() { max-width: 1320px; }
 }

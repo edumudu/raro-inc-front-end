@@ -1,0 +1,15 @@
+@import "@/assets/scss/mixins/utils";
+
+.label {
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.field {
+  width: 100%;
+  background-color: rgba(255, 255, 255, .5);
+  border: none;
+  outline: none;
+
+  @include generateFocusRing(rgba(255, 255, 255, .3));
+}

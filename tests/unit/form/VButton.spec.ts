@@ -38,6 +38,18 @@ describe('VButton.vue', () => {
     expect(wrapper.classes('rounded')).toBeTruthy();
   });
 
+  it('Should add `small` class to button', async () => {
+    await wrapper.setProps({ size: 'small' });
+
+    expect(wrapper.classes('small')).toBeTruthy();
+  });
+
+  it('Should add `large` class to button', async () => {
+    await wrapper.setProps({ size: 'large' });
+
+    expect(wrapper.classes('large')).toBeTruthy();
+  });
+
   it('Should permit inherit attributes', async () => {
     const props = {
       type: 'text',

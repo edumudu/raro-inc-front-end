@@ -1,13 +1,12 @@
-@mixin generateFocusRing($color) {
-  &:focus { box-shadow: #{$color} 0 0 0 4px; }
-}
+@import "@/assets/scss/mixins/utils";
 
 .btn {
   font-family: inherit;
   font-size: 1.6rem;
-  font-weight: 700;
+  font-weight: 400;
   color: #fff;
   text-align: center;
+  text-decoration: none;
   cursor: pointer;
   border: none;
   outline: none;
@@ -15,10 +14,11 @@
   &.small {
     padding: 5px 12px;
     font-size: 1.3rem;
+    font-weight: 700;
   }
 
   &.large {
-    padding: 10px 20px;
+    padding: 15px 20px;
     font-size: 1.9rem;
   }
 

@@ -42,5 +42,5 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-  @import "@/assets/scss/form/Vbutton.scss";
+  @import "@/assets/scss/form/Vbutton";
 </style>
