@@ -1,21 +1,17 @@
 # raro-inc-front-end
+Project to Raro inc
 
 ## Project setup
 ```
-yarn install
+yarn
 ```
 
 ### Compiles and hot-reloads for development
 ```
-yarn serve
+yarn dev
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Run your unit tests
+### Run unit tests
 ```
 yarn test:unit
 ```
@@ -23,7 +19,7 @@ yarn test:unit
 ### Lints and fixes files
 ```
 yarn lint
+yarn lint:js
+yarn lint:style
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
