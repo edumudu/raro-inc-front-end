@@ -1,18 +1,51 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <div class="container">
+      <VButton>
+        small
+      </VButton>
+
+      <VButton rounded>
+        small rounded
+      </VButton>
+
+      <VButton size="large">
+        Large
+      </VButton>
+
+      <VButton size="large" rounded>
+         Large Rounded
+      </VButton>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+import VButton from '@/components/form/VButton.vue';
 
 export default Vue.extend({
   name: 'App',
-  components: {
-    HelloWorld,
+  components: { VButton },
+
+  data: () => ({
+    posts: [],
+    isLoading: false,
+  }),
+
+  created() {
+    this.fetchPosts();
+  },
+
+  methods: {
+    async fetchPosts() {
+      try {
+        const { data } = await this.$axios.get('/posts');
+        console.log(data);
+      } catch (error) {
+        alert('An error has occured');
+      }
+    },
   },
 });
 </script>

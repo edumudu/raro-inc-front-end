@@ -1,0 +1,32 @@
+@mixin generateFocusRing($color) {
+  &:focus { box-shadow: #{$color} 0 0 0 4px; }
+}
+
+.btn {
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+
+  &.small {
+    padding: 5px 12px;
+    font-size: 1.3rem;
+  }
+
+  &.large {
+    padding: 10px 20px;
+    font-size: 1.9rem;
+  }
+
+  &.primary {
+    background-color: var(--primary);
+
+    @include generateFocusRing(var(--primary-50));
+  }
+
+  &.rounded { border-radius: 9999px; }
+}

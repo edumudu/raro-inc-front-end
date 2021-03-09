@@ -11,6 +11,7 @@
     "lint:style": "stylelint \"src/assets/scss/**/*.scss\""
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "core-js": "3.9.1",
     "vue": "2.6.12"
   },
@@ -31,7 +32,7 @@
     "eslint-plugin-vue": "^7.7.0",
     "lint-staged": "^10.5.4",
     "node-sass": "^5.0.0",
-    "sass-loader": "^11.0.1",
+    "sass-loader": "^10.1.1",
     "stylelint": "^13.12.0",
     "stylelint-config-twbs-bootstrap": "^2.1.0",
     "typescript": "~4.2.3",
